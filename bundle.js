@@ -22265,7 +22265,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'header-image-wrapper' },
-	    _react2.default.createElement('img', { src: './images/box-era-poster.jpg', alt: 'Box Era' })
+	    _react2.default.createElement('img', { src: './images/box-era-logo.jpg', alt: 'Box Era' })
 	  );
 	};
 	
@@ -22310,7 +22310,36 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'tour-dates-wrapper' },
-	        'Tour Dates'
+	        'Tour Dates',
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Sample date '
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Sample date'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Sample date'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Sample date'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Sample date'
+	          )
+	        )
 	      );
 	    }
 	  }]);
