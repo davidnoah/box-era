@@ -30,13 +30,10 @@ const sampleTourDates = {
 const TourDate = ({ venue, location, date, otherBands }) => {
   return (
     <div className="tour-date-wrapper">
-      <img src={'./images/patterns/pattern-line-circle.png'} />
+      <img src={'./images/patterns/pattern-two-circles.png'} />
       <div className="tour-date-item">{date}</div>
-      <img src={'./images/patterns/pattern-diagonal-lines.png'} />
       <div className="tour-date-item">{venue}</div>
-      <img src={'./images/patterns/pattern-double-helix.png'} />
       <div className="tour-date-item">{location}</div>
-      {!!otherBands && <img src={'./images/patterns/pattern-sideways-triangles.png'} />}
       <div className="tour-date-item">{otherBands}</div>
     </div>
   );
@@ -72,20 +69,17 @@ export default class TourDates extends React.Component {
       <div className="tour-dates-wrapper">
         <h2>{'Tour Dates'}</h2>
         <div className="tour-dates-top">
+          <img src={'./images/patterns/pattern-two-circles.png'} />
           <div className="tour-dates-top-title">
-            <img src={'./images/patterns/pattern-line-circle.png'} />
             {'Date'}
           </div>
           <div className="tour-dates-top-title">
-            <img src={'./images/patterns/pattern-diagonal-lines.png'} />
             {'Venue'}
           </div>
           <div className="tour-dates-top-title">
-            <img src={'./images/patterns/pattern-double-helix.png'} />
             {'Location'}
           </div>
           <div className="tour-dates-top-title">
-            <img src={'./images/patterns/pattern-sideways-triangles.png'} />
             {'Other Bands'}
           </div>
         </div>
