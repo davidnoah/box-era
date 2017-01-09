@@ -11,8 +11,9 @@ canvas {
   width: 300px;
   top: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .lava-lamp-wrapper {
@@ -21,4 +22,11 @@ canvas {
 
 .lava-text {
   padding-left: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lava-text:hover {
+  text-decoration: underline;
 }
