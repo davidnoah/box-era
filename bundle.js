@@ -22310,7 +22310,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'tour-dates-wrapper' },
-	        'Tour Dates',
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Tour Dates'
+	        ),
 	        _react2.default.createElement(
 	          'ul',
 	          null,
