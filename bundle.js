@@ -22249,7 +22249,7 @@
 /* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -22263,9 +22263,9 @@
 	
 	var HeaderImage = function HeaderImage() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "header-image-wrapper" },
-	    _react2.default.createElement("img", { src: "../images/box-era-logo.jpg" })
+	    'div',
+	    { className: 'header-image-wrapper' },
+	    _react2.default.createElement('img', { src: './images/box-era-poster.jpg', alt: 'Box Era' })
 	  );
 	};
 	
