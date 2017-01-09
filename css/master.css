@@ -4,27 +4,34 @@ html {
 
 body {
   margin: 0 auto;
+  color: #ffffff;
   font-family: 'PT Sans', sans-serif;
 }
 
 .splash-wrapper {
-  margin-top: 30px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header-wrapper {
+  padding: 10px 0 20px;
+  display: flex;
+  justify-content: center;
   height: 200px;
-  background: purple;
+  width: 100%;
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, #936bb1, #373956, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, #936bb1, #373956, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, #936bb1, #373956, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #936bb1, #373956, black);
 }
 
 .header-image-wrapper {
 }
 
 .header-image-wrapper img {
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 
@@ -32,9 +39,10 @@ body {
 }
 
 .splash-video-wrapper {
-  height: 350px;
-  width: 500px;
-  border: 1px solid white;
+  margin: 10px auto;
+  height: 300px;
+  width: 450px;
+  border: 1px solid lightgrey;
 }
 
 .tour-dates-wrapper {
