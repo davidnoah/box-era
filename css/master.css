@@ -1,5 +1,14 @@
 @import url('./lava.css');
 
+/* fonts */
+.fonts {
+  font-family: 'Lemonada', cursive;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Raleway', sans-serif;
+}
+
 html {
   background: #000000;
 }
