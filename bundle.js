@@ -22421,8 +22421,27 @@
 	        _react2.default.createElement('canvas', { id: 'bubble' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'lava-text' },
-	          'Tour Dates'
+	          { className: 'navigation-wrapper' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'lava-text' },
+	            'Biography'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'lava-text' },
+	            'Tour Dates'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'lava-text' },
+	            'Photos'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'lava-text' },
+	            'Contact'
+	          )
 	        )
 	      );
 	    }

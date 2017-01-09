@@ -4,13 +4,21 @@ canvas {
   position: relative;
 }
 
-.lava-text {
-  position: absolute;
+.navigation-wrapper {
   z-index: 1;
-  top: 100px;
-  margin-left: 20px;
+  position: absolute;
+  height: 180px;
+  width: 300px;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .lava-lamp-wrapper {
 
+}
+
+.lava-text {
+  padding-left: 20px;
 }
