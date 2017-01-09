@@ -1,11 +1,13 @@
 import React from 'react';
 
-import HeaderImage from './header/headerImage';
+import Header from './header/header';
+import SplashVideo from './splashVideo';
 import TourDates from './tourDates';
 
 const Splash = () => (
   <div className="splash-wrapper">
-    <HeaderImage />
+    <Header />
+    <SplashVideo />
     <TourDates />
   </div>
 );
