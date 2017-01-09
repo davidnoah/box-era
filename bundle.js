@@ -22222,9 +22222,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _headerImage = __webpack_require__(186);
+	var _header = __webpack_require__(191);
 	
-	var _headerImage2 = _interopRequireDefault(_headerImage);
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _splashVideo = __webpack_require__(192);
+	
+	var _splashVideo2 = _interopRequireDefault(_splashVideo);
 	
 	var _tourDates = __webpack_require__(187);
 	
@@ -22234,14 +22238,23 @@
 	
 	var _lavaLampIndex2 = _interopRequireDefault(_lavaLampIndex);
 	
+	var _headerImage = __webpack_require__(186);
+	
+	var _headerImage2 = _interopRequireDefault(_headerImage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Splash = function Splash() {
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'splash-wrapper' },
-	    _react2.default.createElement(_headerImage2.default, null),
-	    _react2.default.createElement(_lavaLampIndex2.default, null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'header-lava' },
+	      _react2.default.createElement(_header2.default, null),
+	      _react2.default.createElement(_lavaLampIndex2.default, null)
+	    ),
+	    _react2.default.createElement(_splashVideo2.default, null),
 	    _react2.default.createElement(_tourDates2.default, null)
 	  );
 	};
@@ -22268,7 +22281,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'header-image-wrapper' },
-	    _react2.default.createElement('img', { src: './images/box-era-logo.jpg', alt: 'Box Era' })
+	    _react2.default.createElement('img', { src: './images/box-era-logo-transparent-bg.png', alt: 'Box Era' })
 	  );
 	};
 	
@@ -22313,7 +22326,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'tour-dates-wrapper' },
-	        'Tour Dates',
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Tour Dates'
+	        ),
 	        _react2.default.createElement(
 	          'ul',
 	          null,
@@ -22401,11 +22418,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'lava-lamp-wrapper' },
+	        _react2.default.createElement('canvas', { id: 'bubble' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'wrap' },
-	          _react2.default.createElement('canvas', { id: 'bubble' }),
-	          _react2.default.createElement('span', { className: 'text' })
+	          { className: 'lava-text' },
+	          'Tour Dates'
 	        )
 	      );
 	    }
@@ -22663,6 +22680,62 @@
 	};
 	
 	module.exports = runLamp;
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _headerImage = __webpack_require__(186);
+	
+	var _headerImage2 = _interopRequireDefault(_headerImage);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Header = function Header() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'header-wrapper' },
+	    _react2.default.createElement(_headerImage2.default, null)
+	  );
+	};
+	
+	exports.default = Header;
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var SplashVideo = function SplashVideo() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'splash-video-wrapper' },
+	    'embedded music video'
+	  );
+	};
+	
+	exports.default = SplashVideo;
 
 /***/ }
 /******/ ]);

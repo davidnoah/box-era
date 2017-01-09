@@ -1,13 +1,18 @@
 import React from 'react';
 
-import HeaderImage from './header/headerImage';
+import Header from './header/header';
+import SplashVideo from './splashVideo';
 import TourDates from './tourDates';
-import LavaLampIndex from './header/lavaLampIndex.js';
+import LavaLampIndex from './header/lavaLampIndex';
+import HeaderImage from './header/headerImage';
 
 const Splash = () => (
   <div className="splash-wrapper">
-    <HeaderImage />
-    <LavaLampIndex />
+    <div className="header-lava">
+      <Header />
+      <LavaLampIndex />
+    </div>
+    <SplashVideo />
     <TourDates />
   </div>
 );

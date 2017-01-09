@@ -13,10 +13,8 @@ export default class LavaLampIndex extends React.Component {
   render() {
     return (
       <div className="lava-lamp-wrapper">
-        <div className="wrap">
-          <canvas id="bubble"></canvas>
-          <span className="text"></span>
-        </div>
+        <canvas id="bubble"></canvas>
+        <div className="lava-text">Tour Dates</div>
       </div>
     );
   }
