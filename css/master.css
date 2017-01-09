@@ -1,0 +1,25 @@
+html {
+}
+
+body {
+  margin: 0;
+}
+
+.splash-wrapper {
+  margin: 0 auto;
+}
+
+.header-image-wrapper {
+}
+
+.header-image-wrapper img {
+  width: 300px;
+  height: auto;
+}
+
+.header-text-wrapper {
+}
+
+.tour-dates-wrapper {
+  min-width: 300px;
+}

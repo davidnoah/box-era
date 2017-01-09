@@ -1,15 +1,13 @@
 import React from 'react';
 
-export default class Splash extends React.Component {
-  constructor () {
-    super();
-  }
+import HeaderImage from './header/headerImage';
+import TourDates from './tourDates';
 
-  render () {
-    return (
-    <div className="splash-wrapper">
-      {'good load'}
-    </div>
-    );
-  }
-}
+const Splash = () => (
+  <div className="splash-wrapper">
+    <HeaderImage />
+    <TourDates />
+  </div>
+);
+
+export default Splash;

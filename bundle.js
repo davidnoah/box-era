@@ -22218,6 +22218,69 @@
 	  value: true
 	});
 	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _headerImage = __webpack_require__(188);
+	
+	var _headerImage2 = _interopRequireDefault(_headerImage);
+	
+	var _tourDates = __webpack_require__(189);
+	
+	var _tourDates2 = _interopRequireDefault(_tourDates);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Splash = function Splash() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'splash-wrapper' },
+	    _react2.default.createElement(_headerImage2.default, null),
+	    _react2.default.createElement(_tourDates2.default, null)
+	  );
+	};
+	
+	exports.default = Splash;
+
+/***/ },
+/* 186 */,
+/* 187 */,
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HeaderImage = function HeaderImage() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "header-image-wrapper" },
+	    _react2.default.createElement("img", { src: "../images/box-era-logo.jpg" })
+	  );
+	};
+	
+	exports.default = HeaderImage;
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(1);
@@ -22232,30 +22295,30 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Splash = function (_React$Component) {
-	  _inherits(Splash, _React$Component);
+	var TourDates = function (_React$Component) {
+	  _inherits(TourDates, _React$Component);
 	
-	  function Splash() {
-	    _classCallCheck(this, Splash);
+	  function TourDates() {
+	    _classCallCheck(this, TourDates);
 	
-	    return _possibleConstructorReturn(this, (Splash.__proto__ || Object.getPrototypeOf(Splash)).call(this));
+	    return _possibleConstructorReturn(this, (TourDates.__proto__ || Object.getPrototypeOf(TourDates)).call(this));
 	  }
 	
-	  _createClass(Splash, [{
+	  _createClass(TourDates, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'splash-wrapper' },
-	        'good load'
+	        { className: 'tour-dates-wrapper' },
+	        'Tour Dates'
 	      );
 	    }
 	  }]);
 	
-	  return Splash;
+	  return TourDates;
 	}(_react2.default.Component);
 	
-	exports.default = Splash;
+	exports.default = TourDates;
 
 /***/ }
 /******/ ]);
