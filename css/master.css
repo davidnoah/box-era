@@ -40,7 +40,7 @@ body {
 
 .splash-video-wrapper {
   margin: 10px auto;
-  border: 1px solid lightgrey;
+  border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .tour-dates-wrapper {

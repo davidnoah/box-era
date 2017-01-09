@@ -22361,7 +22361,7 @@
 	    value: function render() {
 	      var opts = {
 	        height: '300',
-	        width: '400',
+	        width: '460',
 	        playerVars: { // https://developers.google.com/youtube/player_parameters
 	          autoplay: 0
 	        }
@@ -22370,7 +22370,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'splash-video-wrapper' },
-	        'embedded video'
+	        _react2.default.createElement(_reactYoutube2.default, {
+	          videoId: 'eVW1qOmTG4I',
+	          opts: opts,
+	          onReady: this._onReady
+	        })
 	      );
 	    }
 	  }]);
