@@ -70,12 +70,7 @@ export default class TourDates extends React.Component {
 
     return (
       <div className="tour-dates-wrapper">
-        <h2>
-          <span>
-            <img src={'./images/patterns/pattern-horizontal-line-squiggly.png'} />
-          </span>
-          {'Tour Dates'}
-        </h2>
+        <h2>{'Tour Dates'}</h2>
         <div className="tour-dates-top">
           <div className="tour-dates-top-title">
             <img src={'./images/patterns/pattern-line-circle.png'} />

@@ -1,12 +1,18 @@
 import React from 'react';
 
+import classnames from 'classnames';
+
 // https://www.npmjs.com/package/react-youtube
 import YouTube from 'react-youtube';
-// <YouTube
-//   videoId="eVW1qOmTG4I"
-//   opts={opts}
-//   onReady={this._onReady}
-// />
+
+const VideoColumn = ({ className }) => (
+  <div className={classnames("video-column", className)}>
+    <img src={'./images/patterns/pattern-line-circle.png'} style={{ height: '90px' }} />
+    <img src={'./images/patterns/pattern-two-full-circles.png'} />
+    <img src={'./images/patterns/pattern-double-helix.png'} style={{ height: '100px' }}/>
+    <img src={'./images/patterns/pattern-horizontal-line-squiggly.png'}  />
+  </div>
+);
 
 export default class SplashVideo extends React.Component {
   constructor () {
@@ -28,12 +34,14 @@ export default class SplashVideo extends React.Component {
     };
 
     return (
-      <div className="splash-video-wrapper">
-        <YouTube
-          videoId="eVW1qOmTG4I"
-          opts={opts}
-          onReady={this._onReady}
-        />
+      <div className="splash-video-row">
+        <div className="splash-video-wrapper">
+          <YouTube
+            videoId="eVW1qOmTG4I"
+            opts={opts}
+            onReady={this._onReady}
+          />
+        </div>
       </div>
     );
   }
