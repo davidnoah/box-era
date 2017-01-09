@@ -22299,7 +22299,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'header-image-wrapper' },
-	    _react2.default.createElement('img', { src: './images/box-era-logo.jpg', alt: 'Box Era' })
+	    _react2.default.createElement('img', { src: './images/box-era-logo-transparent-bg.png', alt: 'Box Era' })
 	  );
 	};
 	
