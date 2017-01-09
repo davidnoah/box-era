@@ -10,7 +10,7 @@ export default class TourDates extends React.Component {
     <div className="tour-dates-wrapper">
       <h2>{'Tour Dates'}</h2>
       <ul>
-        <li>{'Sample date '}</li>
+        <li>{'Sample date'}</li>
         <li>{'Sample date'}</li>
         <li>{'Sample date'}</li>
         <li>{'Sample date'}</li>
