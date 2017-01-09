@@ -21,7 +21,7 @@ export default class SplashVideo extends React.Component {
   render () {
     const opts = {
       height: '300',
-      width: '460',
+      width: '500',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0,
       },

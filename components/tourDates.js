@@ -51,7 +51,7 @@ export default class TourDates extends React.Component {
     // get tour dates from firebase
     const tourDatesArr = [];
 
-    _.forOwn(sampleTourDates, (key, value) => {
+    _.forOwn(sampleTourDates, (value, key) => {
       tourDatesArr.push(value);
     });
 

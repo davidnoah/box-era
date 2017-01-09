@@ -2,7 +2,6 @@
 
 /* fonts */
 .fonts {
-  font-family: 'Lemonada', cursive;
   font-family: 'PT Sans', sans-serif;
   font-family: 'Lobster', cursive;
   font-family: 'Gloria Hallelujah', cursive;
@@ -52,14 +51,18 @@ body {
 
 .tour-dates-wrapper {
   min-width: 300px;
+  margin-bottom: 100px;
+  width: 500px;
 }
 
 .tour-dates-wrapper h2 {
-  font-family: 'Lemonada', cursive;
+  margin: 0;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .tour-dates-wrapper li {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
   font-size: 13px;
 }
 
