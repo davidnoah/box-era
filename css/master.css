@@ -1,4 +1,5 @@
 html {
+  background: #000000;
 }
 
 body {
@@ -10,7 +11,13 @@ body {
   margin-top: 30px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper {
+  height: 200px;
+  background: purple;
 }
 
 .header-image-wrapper {
@@ -22,6 +29,12 @@ body {
 }
 
 .header-text-wrapper {
+}
+
+.splash-video-wrapper {
+  height: 350px;
+  width: 500px;
+  border: 1px solid white;
 }
 
 .tour-dates-wrapper {
