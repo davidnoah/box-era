@@ -41915,6 +41915,16 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _firebase = __webpack_require__(178);
+	
+	var firebase = _interopRequireWildcard(_firebase);
+	
+	var _lodash = __webpack_require__(193);
+	
+	var _lodash2 = _interopRequireDefault(_lodash);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41923,18 +41933,80 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var sampleTourDates = {
+	  1: {
+	    venue: 'Wherever',
+	    location: 'San Francisco, CA',
+	    date: 'February 2, 2017',
+	    otherBands: 'other band 1, other band 2'
+	  },
+	  2: {
+	    venue: 'Some dudes basement',
+	    location: 'Oakland, CA',
+	    date: 'February 3, 2017'
+	  },
+	  3: {
+	    venue: 'Somewhere Else',
+	    location: 'Los Angeles, CA',
+	    date: 'February 4, 2017',
+	    otherBands: 'other band 1, other band 2'
+	  },
+	  4: {
+	    venue: 'Another place',
+	    location: 'San Diego, CA',
+	    date: 'February 8, 2017'
+	  }
+	};
+	
+	var TourDate = function TourDate(_ref) {
+	  var venue = _ref.venue,
+	      location = _ref.location,
+	      data = _ref.data,
+	      otherBands = _ref.otherBands;
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'tour-date-wrapper' },
+	    'tour date',
+	    venue,
+	    location
+	  );
+	};
+	
 	var TourDates = function (_React$Component) {
 	  _inherits(TourDates, _React$Component);
 	
 	  function TourDates() {
 	    _classCallCheck(this, TourDates);
 	
-	    return _possibleConstructorReturn(this, (TourDates.__proto__ || Object.getPrototypeOf(TourDates)).call(this));
+	    var _this = _possibleConstructorReturn(this, (TourDates.__proto__ || Object.getPrototypeOf(TourDates)).call(this));
+	
+	    _this.state = {
+	      tourDates: []
+	    };
+	    return _this;
 	  }
 	
 	  _createClass(TourDates, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // get tour dates from firebase
+	      var tourDatesArr = [];
+	
+	      _lodash2.default.forOwn(sampleTourDates, function (key, value) {
+	        tourDatesArr.push(value);
+	      });
+	
+	      console.log('>>> tourDates', tourDatesArr);
+	
+	      this.setState({ tourDates: tourDatesArr });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var tourDates = this.state.tourDates;
+	
+	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'tour-dates-wrapper' },
@@ -41943,35 +42015,20 @@
 	          null,
 	          'Tour Dates'
 	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sample date '
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sample date'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sample date'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sample date'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sample date'
-	          )
-	        )
+	        tourDates.map(function (tourObj, index) {
+	          var venue = tourObj.venue,
+	              location = tourObj.location,
+	              date = tourObj.date,
+	              otherBands = tourObj.otherBands;
+	
+	          return _react2.default.createElement(TourDate, {
+	            key: index,
+	            venue: venue,
+	            location: location,
+	            date: date,
+	            otherBands: otherBands
+	          });
+	        })
 	      );
 	    }
 	  }]);
