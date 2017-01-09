@@ -1,5 +1,13 @@
 @import url('./lava.css');
 
+/* fonts */
+.fonts {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Raleway', sans-serif;
+}
+
 html {
   background: #000000;
 }
@@ -8,6 +16,9 @@ body {
   margin: 0 auto;
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
+  background-image: url("../images/box-era-crazy-pattern-bg.png");
+  background-size: 34% 40%;
+  background-repeat: repeat;
 }
 
 .splash-wrapper {
@@ -38,20 +49,86 @@ body {
 
 .splash-video-wrapper {
   margin: 10px auto;
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  padding: 0px;
+  border: 15px solid rgba(255, 255, 255, 0.98);
+  background: white;
+}
+
+.splash-video-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.video-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transform: rotateX(180deg);
+}
+
+.video-column.video-column-right {
+  -moz-transform: scale(-1, -1);
+   -o-transform: scale(-1, -1);
+   -webkit-transform: scale(-1, -1);
+   transform: scale(-1, -1);
+}
+
+.video-column img {
+  max-width: 100px;
 }
 
 .tour-dates-wrapper {
   min-width: 300px;
+  /* margin-bottom: 100px; */
+  /* width: 100%; */
+  background: linear-gradient(#1f151e, black);
+  padding: 20px 200px 100px;
+  margin-top: 20px;
+  border-top: 1px solid #332e35;
 }
 
 .tour-dates-wrapper h2 {
-  font-family: 'Lemonada', cursive;
+  display: flex;
+  margin: 0;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .tour-dates-wrapper li {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
   font-size: 13px;
+}
+
+.tour-dates-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.tour-dates-top-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-right: 100px;
+}
+
+.tour-dates-wrapper img {
+  max-height: 40px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.tour-date-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tour-date-wrapper img {
+  margin-right: 15px;
+  max-height: 30px;
+  width: auto;
 }
 
 .header-lava {
@@ -59,4 +136,13 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.tour-date-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 150px;
+  font-size: 14px;
+  text-overflow: ellipsis;
 }

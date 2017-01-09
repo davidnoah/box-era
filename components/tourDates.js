@@ -27,12 +27,17 @@ const sampleTourDates = {
   },
 };
 
-const TourDate = ({ venue, location, data, otherBands }) => {
+const TourDate = ({ venue, location, date, otherBands }) => {
   return (
     <div className="tour-date-wrapper">
-      {'tour date'}
-      {venue}
-      {location}
+      <img src={'./images/patterns/pattern-line-circle.png'} />
+      <div className="tour-date-item">{date}</div>
+      <img src={'./images/patterns/pattern-diagonal-lines.png'} />
+      <div className="tour-date-item">{venue}</div>
+      <img src={'./images/patterns/pattern-double-helix.png'} />
+      <div className="tour-date-item">{location}</div>
+      {!!otherBands && <img src={'./images/patterns/pattern-sideways-triangles.png'} />}
+      <div className="tour-date-item">{otherBands}</div>
     </div>
   );
 };
@@ -51,7 +56,7 @@ export default class TourDates extends React.Component {
     // get tour dates from firebase
     const tourDatesArr = [];
 
-    _.forOwn(sampleTourDates, (key, value) => {
+    _.forOwn(sampleTourDates, (value, key) => {
       tourDatesArr.push(value);
     });
 
@@ -66,6 +71,24 @@ export default class TourDates extends React.Component {
     return (
       <div className="tour-dates-wrapper">
         <h2>{'Tour Dates'}</h2>
+        <div className="tour-dates-top">
+          <div className="tour-dates-top-title">
+            <img src={'./images/patterns/pattern-line-circle.png'} />
+            {'Date'}
+          </div>
+          <div className="tour-dates-top-title">
+            <img src={'./images/patterns/pattern-diagonal-lines.png'} />
+            {'Venue'}
+          </div>
+          <div className="tour-dates-top-title">
+            <img src={'./images/patterns/pattern-double-helix.png'} />
+            {'Location'}
+          </div>
+          <div className="tour-dates-top-title">
+            <img src={'./images/patterns/pattern-sideways-triangles.png'} />
+            {'Other Bands'}
+          </div>
+        </div>
         {tourDates.map((tourObj, index) => {
           const { venue, location, date, otherBands } = tourObj;
           return (
