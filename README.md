@@ -1,7 +1,7 @@
 # BOX ERA
 
 ### todo:
-- [ ] setup firebase
+- [x] setup firebase
 
 - [ ] setup admin user account
 - [ ] setup admin UI

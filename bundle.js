@@ -58,7 +58,9 @@
 	
 	var firebase = _interopRequireWildcard(_firebase);
 	
-	var _splash = __webpack_require__(184);
+	var _config = __webpack_require__(184);
+	
+	var _splash = __webpack_require__(185);
 	
 	var _splash2 = _interopRequireDefault(_splash);
 	
@@ -66,20 +68,14 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// Firebase
-	// React
-	var config = {
-	  apiKey: "AIzaSyAUfrVpqX69J8ciGkU_0a5VYRda3FX4t_E",
-	  authDomain: "secretsanta-7ae82.firebaseapp.com",
-	  databaseURL: "https://secretsanta-7ae82.firebaseio.com",
-	  storageBucket: "secretsanta-7ae82.appspot.com",
-	  messagingSenderId: "482910917117"
-	};
+	firebase.initializeApp(_config.configFirebase);
 	
 	// Components
 	
 	
-	firebase.initializeApp(config);
+	// Firebase
+	// React
+	
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	  var root = document.getElementById('root');
@@ -22195,6 +22191,25 @@
 
 /***/ },
 /* 184 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// firebase
+	
+	var configFirebase = exports.configFirebase = {
+	  apiKey: "AIzaSyApfITVw-y4x4n6AWyEYOToVNhdR-WAxUo",
+	  authDomain: "box-era.firebaseapp.com",
+	  databaseURL: "https://box-era.firebaseio.com",
+	  storageBucket: "box-era.appspot.com",
+	  messagingSenderId: "841983164610"
+	};
+
+/***/ },
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
