@@ -38,9 +38,7 @@ body {
 
 .splash-video-wrapper {
   margin: 10px auto;
-  height: 300px;
-  width: 450px;
-  border: 1px solid lightgrey;
+  border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .tour-dates-wrapper {
