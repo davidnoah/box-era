@@ -3,6 +3,7 @@ html {
 
 body {
   margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .splash-wrapper {
@@ -25,4 +26,13 @@ body {
 
 .tour-dates-wrapper {
   min-width: 300px;
+}
+
+.tour-dates-wrapper h2 {
+  font-family: 'Lemonada', cursive;
+}
+
+.tour-dates-wrapper li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
 }

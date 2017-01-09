@@ -8,7 +8,7 @@ export default class TourDates extends React.Component {
   render () {
     return (
     <div className="tour-dates-wrapper">
-      {'Tour Dates'}
+      <h2>{'Tour Dates'}</h2>
       <ul>
         <li>{'Sample date '}</li>
         <li>{'Sample date'}</li>
